@@ -30,6 +30,7 @@ class API:
         if response.status_code == 200:
             self.bearer_token = response.json()['access_token']
         else:
+            print("Authentication Error. Check your Twitter Credentials!")
             raise Exception("Authentication Error. Check your Twitter Credentials!")
 
     def get(self, op, params):
