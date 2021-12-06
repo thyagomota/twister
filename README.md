@@ -19,6 +19,8 @@ if __name__ == "__main__":
             params = {}
         )
         print(tweet)
+    except Exception as err: 
+        print(err)
 ```
 
 What if you want to use Twitter's operation https://api.twitter.com/2/tweets that returns multiple tweets from a single request? 
@@ -44,4 +46,6 @@ if __name__ == "__main__":
             params = params
         )
         print(tweets)
+    except Exception as err: 
+        print(err)
 ```
